@@ -15,6 +15,13 @@
         align-items: flex-start;
     }
 
+    @media (width > 1279px) {
+        justify-content: center;
+        gap: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     a {
         color: white;
         text-transform: uppercase;
@@ -27,6 +34,9 @@
             text-align: left;
             width: 210px;
             padding-top: 50px;
+        }
+        @media (width > 1279px) {
+            width: 160px;
         }
     }
 
@@ -54,6 +64,10 @@
             position: absolute;
             transform: translateY(-25px);
             left: calc(50vw - 19.5px);
+        }
+
+        @media (width > 1279px) {;
+            left: calc(50vw - 22.5px);
         }
         
         img {

@@ -5,6 +5,10 @@
     @media (width > 767px) {
         font-size: 20px; 
     }
+    @media (width > 1279px) {
+        padding-left: 81.2px;
+        padding-right: 81.2px;
+    }
 
     h2 {
         @include titulos();
@@ -15,6 +19,12 @@
         @media (width > 767px) {
             font-size: 26px; 
             margin-bottom: 57px;
+        }
+
+        @media (width > 1279px) {
+            font-size: 32px; 
+            margin-top: 46px;
+            margin-bottom: 43px;
         }
     }
 
@@ -38,6 +48,11 @@
             grid-template-columns: 1fr 1fr 1fr;
             padding-bottom: 67px;
         }
+        @media (width > 1279px) {
+            gap: 40px;
+            padding: 0px;
+            padding-bottom: 49px;
+        }
     }
 
     &__button {
@@ -50,6 +65,13 @@
         justify-content: center;
         margin: auto;
         margin-bottom: 45px;
+
+        @media (width > 767px) {
+            width: 210px;
+        }
+        @media (width > 1279px) {
+            width: 255px;
+        }
 
         a {
             color: white;

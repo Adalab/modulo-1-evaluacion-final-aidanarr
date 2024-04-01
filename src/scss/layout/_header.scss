@@ -7,6 +7,7 @@
     background-image: url("../images/Copia de cover.jpg");
     background-repeat: no-repeat;
     background-position: left;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +16,11 @@
 
     @media (width > 767px) {
         padding-bottom: 96px;
+    }
+
+    @media (width > 1279px) {
+        padding-bottom: 100px;
+        gap: 5px;
     }
 
     h1 {
@@ -27,6 +33,11 @@
         @media (width > 767px) {
             font-size: 80px;
             line-height: 1.33;
+        }
+
+        @media (width > 1279px) {
+            font-size: 100px;
+            width: 60%;
         }
     }
 
@@ -64,6 +75,11 @@
             transform: translateY(60px); 
         }
 
+        @media (width > 1279px) {
+            width: 45px;
+            transform: translateY(85px); 
+        }
+
         img {
             transform: translateY(2px);
         }
@@ -71,12 +87,14 @@
 
     &__subtitle {
         font-weight: 300;
+
         @media (width > 767px) {
             line-height: 1.17;
             font-size: 24px;
             text-align: center;
             width: 40%;
         }
+
     }
     
 }
