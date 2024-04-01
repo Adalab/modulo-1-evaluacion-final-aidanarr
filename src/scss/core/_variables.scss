@@ -1,0 +1,15 @@
+
+$font-main: 'Roboto', sans-serif;
+$font-title: 'Roboto Slab', serif;
+
+$orange: #f26002;
+$light-blue: #8ccbea;
+$ice-blue: #eff9ff;
+$med-blue: #0271bc;
+$dark-blue: #304268;
+$grey: #4a4a4a;
+
+@mixin titulos() {
+    font-family: $font-title;
+    font-weight: bold;
+}

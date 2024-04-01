@@ -1,0 +1,72 @@
+.tips {
+    background-color: white;
+    margin-top: 24.9px;
+    padding-top: 37px;
+    padding-bottom: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (width > 767px) {
+        padding-left: 39px;
+        padding-right: 39px;
+        padding-bottom: 60px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        color: $light-blue;
+
+        @media (width > 767px) {
+            margin-bottom: 6px;
+        }
+    }
+
+    h2 {
+        font-size: 24px;
+        @include titulos();
+        line-height: 1.25;
+        margin-bottom: 10px;
+
+        @media (width > 767px) {
+            font-size: 26px;
+            margin-bottom: 27px;
+        }
+    }
+
+    &__parrafo {
+        color: $grey;
+        font-size: 18px;
+        line-height: 1.67;
+        margin-bottom: 15px;
+
+        @media (width > 767px) {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__go {
+        width: 76px;
+        height: 45px;
+        background-color: white;
+        border: solid 2px $orange;
+        border-radius: 22.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+             
+        a {
+            color: $orange;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        @media (width > 767px) {
+            width: 91px;
+        }
+    }
+
+}

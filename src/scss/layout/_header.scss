@@ -1,0 +1,82 @@
+.header {
+    height: 100vh;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 106.3px;
+    background-image: url("../images/Copia de cover.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+
+    @media (width > 767px) {
+        padding-bottom: 96px;
+    }
+
+    h1 {
+        font-size: 42px;
+        text-shadow: 0 2px 3px black;
+        @include titulos();
+        line-height: 1.31;
+        text-transform: uppercase;
+
+        @media (width > 767px) {
+            font-size: 80px;
+            line-height: 1.33;
+        }
+    }
+
+    &__menu {
+        width: 37.1px;
+        height: 22px;
+        background-color: $med-blue;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        @media (width > 767px) {
+            width: 41px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__arrow {
+        background-color: white;
+        width: 37px;
+        height: 37px;
+        border-radius: 100px;
+        position: absolute;
+        transform: translateY(70px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (width > 767px) {
+            width: 42px;
+            height: 45px;
+            transform: translateY(60px); 
+        }
+
+        img {
+            transform: translateY(2px);
+        }
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        @media (width > 767px) {
+            line-height: 1.17;
+            font-size: 24px;
+            text-align: center;
+            width: 40%;
+        }
+    }
+    
+}
