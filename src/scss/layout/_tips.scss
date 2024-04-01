@@ -72,19 +72,32 @@
         display: flex;
         align-items: center;
         justify-content: center;
-             
-        a {
-            color: $orange;
-            font-size: 20px;
-            font-weight: bold;
+        transition: all 1s;
+        color: $orange;
+        font-size: 20px;
+        font-weight: bold;
+
+        &:hover {
+            border: solid 2px $med-blue;
+            color: $med-blue;
+            font-size: 24px;
+            background-color: $ice-blue;
+            width: 79px;
         }
+                     
 
         @media (width > 767px) {
             width: 91px;
+            &:hover {
+                width: 95px;
+            }
         }
 
         @media (width > 1279px) {
             width: 160px;
+            &:hover {
+                width: 163px;
+            }
         }
     }
 
