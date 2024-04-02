@@ -1,7 +1,6 @@
 .tips {
     background-color: white;
-    margin-top: 24.9px;
-    padding-top: 37px;
+    padding-top: 61.9px;
     padding-bottom: 45px;
     padding-left: 15px;
     padding-right: 15px;
@@ -13,12 +12,14 @@
         padding-left: 39px;
         padding-right: 39px;
         padding-bottom: 60px;
+        padding-top: 39px;
     }
 
     @media (width > 1279px) {
         padding-top: 40.1px;
         padding-left: 275px;
         padding-right: 275px;
+        padding-top: 65px;
     }
 
     &__subtitle {
@@ -51,7 +52,7 @@
         }
     }
 
-    &__parrafo {
+    &__text {
         color: $grey;
         font-size: 18px;
         line-height: 1.67;
